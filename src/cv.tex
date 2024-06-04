@@ -1,17 +1,29 @@
 \documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
 
+% Settings
+% -------
+
 \usepackage{resources/styles/cv}
+\def\locale{en\_US}
+
+% Contact
+% -------
 
 \def\name{Thiago Lopes}
 \def\username{aslthiago}
 \def\email{\username @gmail.com}
+\def\role{Software Engineer}
+\def\phone{+55 24 98853-7659}
+\def\location{Rio de Janeiro, Brazil}
+\def\timezone{UTC -03:00}
 
+% Document
+% --------
+
+\input{sections/\locale/header}
 \begin{document}
-
-  \noindent
-  \name \\
-  \username \\
-  \email
-
+  \input{sections/\locale/experience}
+  \input{sections/\locale/education}
+  \input{sections/\locale/activities}
 \end{document}

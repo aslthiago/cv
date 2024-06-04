@@ -1,0 +1,33 @@
+\usepackage{fancyhdr}
+\fancypagestyle{fancy}{
+  \fancyhf{}
+
+  \lhead{
+    {\small \today} \\
+    \role \\
+    \href{mailto:\email}{\email}
+  }
+
+  \chead{
+    \centering
+    {\HUGE \bfseries \name}
+    \vspace{0em}
+  }
+
+  \rhead{
+    {\small \timezone} \\
+    \location \\
+    \href{tel:\phone}{\phone}
+  }
+
+  \renewcommand{\headrulewidth}{1pt}
+  \renewcommand{\headrule}{
+    \hbox to\headwidth{
+      % \color{highlight}\leaders\hrule height \headrulewidth\hfill
+    }
+  }
+}
+\pagestyle{fancy}
+
+\setlength{\headheight}{90pt}
+\setlength{\headsep}{5pt}
