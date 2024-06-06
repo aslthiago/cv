@@ -1,13 +1,13 @@
-\def\role{Software Engineer}
-\def\location{Rio de Janeiro, Brazil}
-\def\timezone{UTC -03:00}
+\def\role{Engenheiro de Software}
+\def\location{Rio de Janeiro, Brasil}
+\def\city{Petrópolis}
 
 \usepackage{fancyhdr}
 \fancypagestyle{fancy}{
   \fancyhf{}
 
   \lhead{
-    {\small \today} \\
+    {\selectlanguage{brazil} \small \today} \\
     \role \\
     \href{mailto:\email}{\email}
   }
@@ -19,7 +19,7 @@
   }
 
   \rhead{
-    {\small \timezone} \\
+    {\small \city} \\
     \location \\
     \href{tel:\phone}{\phone}
   }
